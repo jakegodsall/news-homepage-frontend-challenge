@@ -1,3 +1,4 @@
+// desktop layout
 .header {
     display: flex;
     flex-direction: row;
@@ -6,10 +7,118 @@
 
     &__navbar {
         width: 30rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
 
         ul {
             display: flex;
             justify-content: space-between;
+        }
+    }
+}
+
+// hamburger
+.header {
+    &__navbar-hamburger {
+        z-index: 30;
+
+        cursor: pointer;
+        border: 0;
+        background-color: inherit;
+        padding: 0;
+
+        // display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position: relative;
+
+        width: 50px;
+        height: 20px;
+
+        div {
+            width: 100%;
+            height: 4px;
+            background-color: black;
+        }
+    }
+
+    &__navbar-hamburger::before,
+    &__navbar-hamburger::after {
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: black;
+        position: absolute;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    &__navbar-hamburger::before {
+        top: 0;
+    }
+
+    &__navbar-hamburger::after {
+        bottom: 0;
+    }
+}
+
+// hamburger animation
+.header {
+    &__navbar-hamburger.opened div {
+        display: none;
+    }
+
+    &__navbar-hamburger.opened::before {
+        bottom: 0;
+        transform: rotate(315deg);
+    }
+
+    &__navbar-hamburger.opened::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+}
+
+// Overlay menu
+.overlay {
+    display: none;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    background-color: rgba(168, 168, 168, 0.576);
+
+    &__active {
+        position: absolute;
+        right: 0;
+        width: 70vw;
+        background-color: var(--white);
+        height: 100vh;
+    }
+
+    &__menu {
+    }
+}
+
+.overlay.active {
+    display: block;
+}
+
+// tablet layout
+@media screen and (max-width: 900px) {
+}
+
+// mobile layout
+@media screen and (max-width: 450px) {
+}
+
+// move to hamburger menu
+@media screen and (max-width: 800px) {
+    .header {
+        &__navbar {
+            display: none;
         }
     }
 }
