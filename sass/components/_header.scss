@@ -92,18 +92,21 @@
 
     &__active {
         position: absolute;
-        right: 0;
+        transform: translateX(100vw);
         width: 70vw;
         background-color: var(--white);
         height: 100vh;
-    }
 
-    &__menu {
+        transition: transform 0.3s ease-in-out;
     }
 }
 
 .overlay.active {
     display: block;
+}
+
+.overlay.active .overlay__active {
+    transform: translateX(30vw);
 }
 
 // tablet layout
