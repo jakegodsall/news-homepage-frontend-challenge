@@ -9,6 +9,8 @@
 
 body {
   background-color: var(--white);
+  display: flex;
+  justify-content: center;
 }
 
 :root {
@@ -21,6 +23,11 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+ul li {
+  padding-left: 0;
+  list-style: none;
+}
+
 :root {
   --soft-orange: hsl(35, 77%, 62%);
   --soft-red: hsl(5, 85%, 63%);
@@ -28,4 +35,22 @@ body {
   --grey-blue: hsl(233, 8%, 79%);
   --dark-grey-blue: hsl(236, 13%, 42%);
   --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__navbar {
+  width: 30rem;
+}
+.header__navbar ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 75%;
 }/*# sourceMappingURL=main.css.map */

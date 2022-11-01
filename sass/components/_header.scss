@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__navbar {
+        width: 30rem;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
