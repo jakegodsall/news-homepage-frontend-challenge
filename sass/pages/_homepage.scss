@@ -17,6 +17,23 @@
 
     &__column2 {
         background-color: var(--very-dark-blue);
+        color: var(--white);
+        padding: 1rem 2rem;
+
+        h2 {
+            font-size: 2rem;
+            color: var(--soft-orange);
+        }
+
+        p {
+            color: var(--dark-grey-blue);
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: var(--dark-grey-blue);
+        }
     }
 
     &__title-row {

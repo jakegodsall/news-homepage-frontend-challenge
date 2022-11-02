@@ -149,6 +149,20 @@ ul li {
 }
 .main-content__column2 {
   background-color: var(--very-dark-blue);
+  color: var(--white);
+  padding: 1rem 2rem;
+}
+.main-content__column2 h2 {
+  font-size: 2rem;
+  color: var(--soft-orange);
+}
+.main-content__column2 p {
+  color: var(--dark-grey-blue);
+}
+.main-content__column2 hr {
+  border: none;
+  height: 1px;
+  background-color: var(--dark-grey-blue);
 }
 .main-content__title-row {
   display: flex;
