@@ -50,10 +50,10 @@ ul li {
 .header__navbar {
   width: 30rem;
   display: flex;
-  justify-content: space-around;
   align-items: center;
 }
 .header__navbar ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -64,7 +64,7 @@ ul li {
   border: 0;
   background-color: inherit;
   padding: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -129,8 +129,17 @@ ul li {
 }
 
 @media screen and (max-width: 800px) {
+  .header {
+    justify-content: space-between;
+  }
   .header__navbar {
+    width: auto;
+  }
+  .header__navbar ul {
     display: none;
+  }
+  .header__navbar-hamburger {
+    display: flex;
   }
 }
 .container {
