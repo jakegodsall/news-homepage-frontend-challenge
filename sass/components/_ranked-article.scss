@@ -2,10 +2,12 @@
     margin-top: 4rem;
     margin-bottom: 2rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 
     &__item {
         display: flex;
+        flex: 1;
 
         img {
             height: 8rem;
@@ -30,7 +32,8 @@
     }
 
     &__item-description {
-        font-size: 0.9rem;
+        margin-top: 0.2rem;
+        font-size: 0.8rem;
         color: var(--dark-grey-blue);
     }
 }
