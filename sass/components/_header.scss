@@ -17,6 +17,10 @@
             width: 100%;
             display: flex;
             justify-content: space-between;
+
+            li:hover {
+                color: var(--soft-red);
+            }
         }
     }
 }
@@ -110,6 +114,26 @@
 
 .overlay.active .overlay__active {
     transform: translateX(30vw);
+}
+
+.overlay.active .overlay__menu {
+    margin-top: 15rem;
+    height: 30%;
+
+    ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        li {
+            font-size: 1.3rem;
+        }
+
+        li:hover {
+            color: var(--soft-red);
+        }
+    }
 }
 
 // tablet layout

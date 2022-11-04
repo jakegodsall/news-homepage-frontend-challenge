@@ -63,6 +63,9 @@ ul li {
   display: flex;
   justify-content: space-between;
 }
+.header__navbar ul li:hover {
+  color: var(--soft-red);
+}
 
 .header__navbar-hamburger {
   z-index: 30;
@@ -132,6 +135,23 @@ ul li {
 
 .overlay.active .overlay__active {
   transform: translateX(30vw);
+}
+
+.overlay.active .overlay__menu {
+  margin-top: 15rem;
+  height: 30%;
+}
+.overlay.active .overlay__menu ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.overlay.active .overlay__menu ul li {
+  font-size: 1.3rem;
+}
+.overlay.active .overlay__menu ul li:hover {
+  color: var(--soft-red);
 }
 
 @media screen and (max-width: 800px) {
