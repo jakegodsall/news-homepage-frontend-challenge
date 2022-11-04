@@ -113,7 +113,30 @@
 }
 
 // tablet layout
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1100px) {
+    .container {
+        width: min(800px, 90%);
+    }
+
+    .main-content {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: auto;
+
+        &__column2 {
+            hr {
+                display: none;
+            }
+
+            .news-story {
+                display: flex;
+
+                &__item {
+                    padding: 1rem;
+                    flex: 1;
+                }
+            }
+        }
+    }
 }
 
 // mobile layout
