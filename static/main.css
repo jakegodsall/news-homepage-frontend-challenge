@@ -168,6 +168,37 @@ ul li {
     display: flex;
   }
 }
+.ranked-article {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+.ranked-article__item {
+  display: flex;
+}
+.ranked-article__item img {
+  height: 8rem;
+}
+.ranked-article__item-content {
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.ranked-article__item-number {
+  font-size: 2rem;
+  font-weight: var(--bold);
+  color: var(--grey-blue);
+}
+.ranked-article__item-title {
+  font-weight: var(--bold);
+}
+.ranked-article__item-description {
+  font-size: 0.9rem;
+  color: var(--dark-grey-blue);
+}
+
 .container {
   margin-top: 3rem;
   width: 75%;
@@ -224,4 +255,12 @@ ul li {
 }
 .main-content__title-row button:active {
   transform: translateY(2px);
+}
+
+.attribution {
+  text-align: center;
+}
+.attribution a {
+  color: var(--soft-red);
+  font-weight: var(--bold);
 }/*# sourceMappingURL=main.css.map */

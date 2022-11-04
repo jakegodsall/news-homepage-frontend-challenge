@@ -1,0 +1,36 @@
+.ranked-article {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+
+    &__item {
+        display: flex;
+
+        img {
+            height: 8rem;
+        }
+    }
+
+    &__item-content {
+        padding-inline: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__item-number {
+        font-size: 2rem;
+        font-weight: var(--bold);
+        color: var(--grey-blue);
+    }
+
+    &__item-title {
+        font-weight: var(--bold);
+    }
+
+    &__item-description {
+        font-size: 0.9rem;
+        color: var(--dark-grey-blue);
+    }
+}
