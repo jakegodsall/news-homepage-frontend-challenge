@@ -69,3 +69,12 @@
         }
     }
 }
+
+.attribution {
+    text-align: center;
+
+    a {
+        color: var(--soft-red);
+        font-weight: var(--bold);
+    }
+}
