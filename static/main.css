@@ -214,6 +214,17 @@ ul li {
     gap: 1rem;
   }
 }
+@media screen and (max-width: 650px) {
+  .ranked-article {
+    display: flex;
+    flex-direction: column;
+  }
+  .ranked-article__item {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+  }
+}
 .container {
   margin-top: 3rem;
   width: min(1000px, 75%);
