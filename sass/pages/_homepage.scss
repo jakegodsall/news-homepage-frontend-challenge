@@ -141,4 +141,27 @@
 
 // mobile layout
 @media screen and (max-width: 650px) {
+    .main-content {
+        &__column1 {
+            flex-direction: column;
+        }
+
+        &__column2 {
+            hr {
+                display: block;
+            }
+
+            .news-story {
+                flex-direction: column;
+
+                &__item {
+                    padding: 0;
+                }
+            }
+        }
+
+        &__title-row {
+            flex-direction: column;
+        }
+    }
 }

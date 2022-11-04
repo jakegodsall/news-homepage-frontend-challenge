@@ -338,4 +338,21 @@ ul li {
     padding: 1rem;
     flex: 1;
   }
+}
+@media screen and (max-width: 650px) {
+  .main-content__column1 {
+    flex-direction: column;
+  }
+  .main-content__column2 hr {
+    display: block;
+  }
+  .main-content__column2 .news-story {
+    flex-direction: column;
+  }
+  .main-content__column2 .news-story__item {
+    padding: 0;
+  }
+  .main-content__title-row {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=main.css.map */
