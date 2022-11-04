@@ -172,7 +172,6 @@ ul li {
   margin: 4rem 0 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .ranked-article__item {
   display: flex;
@@ -203,6 +202,18 @@ ul li {
   color: var(--dark-grey-blue);
 }
 
+@media screen and (max-width: 1000px) {
+  .ranked-article {
+    margin-top: 2rem;
+  }
+  .ranked-article__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+}
 .container {
   margin-top: 3rem;
   width: min(1000px, 75%);
