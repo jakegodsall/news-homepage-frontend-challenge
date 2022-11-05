@@ -180,6 +180,9 @@ ul li {
 .ranked-article__item img {
   height: 10rem;
 }
+.ranked-article__item img:hover {
+  filter: brightness(1.3);
+}
 .ranked-article__item-content {
   padding-inline: 1.5rem;
   display: flex;
@@ -195,6 +198,9 @@ ul li {
 .ranked-article__item-title {
   font-weight: var(--bold);
   margin: 0.5rem 0;
+}
+.ranked-article__item-title:hover {
+  color: var(--soft-red);
 }
 .ranked-article__item-description {
   font-size: 0.8rem;
