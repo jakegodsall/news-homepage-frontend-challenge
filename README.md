@@ -49,7 +49,7 @@ Users should be able to:
 
 ### What I learned
 
-- How to create a hamburger menu using pure CSS with `::before` and `::after` pseudo-selectors.
+- How to create a hamburger menu using pure CSS with `::before` and `::after` pseudo-elements.
 - How to transition from the hamburger to a `X` symbol using CSS transforms.
 - How to load different images according to the viewport width using media queries and the display property. For example
 
